@@ -26,6 +26,7 @@ input{
     font-size: 1rem;
     width: 14%;
     background-color:green;
+    cursor: pointer;
 }
 main{
     display: flex;

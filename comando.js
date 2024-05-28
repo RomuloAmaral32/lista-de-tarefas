@@ -17,14 +17,12 @@ function novatarefa(){
         ${valor}     
         </div>
         <div id="deletar">
-        <button id="delete"><i class="bi bi-trash"></i> Delete </button>
+        <button onclick="apaga(${contador})" id="delete"><i class="bi bi-trash"></i> Delete </button>
         </div>
         </div>`;
         corpo.innerHTML +=codigo;
         recebe.value="";
         recebe.focus();
-        
-
 
     }
     else{
@@ -38,3 +36,9 @@ recebe.addEventListener("keyup",function (event){
         botao.click();
     }
 });
+function apaga(atributo) {
+    let sla = document.getElementsByClassName(atributo);
+    if (sla.length > 0) {
+        sla[0].remove();
+    }
+}

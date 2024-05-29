@@ -10,14 +10,14 @@ function novatarefa(){
         contador++;
         let codigo=
         `   <div id="${contador}" class="pai">
-        <div class="bolinha" >
+        <div onclick="marcartarefa(${contador})" class="bolinha" >
             <i class="bi bi-circle"></i>
         </div>
-        <div class="tarefa">
+        <div onclick="marcartarefa(${contador})" class="tarefa">
         ${valor}
         </div>
         <div class="deletar">
-        <button id="delete"><i class="bi bi-trash"></i> Delete </button>
+        <button onclick="apaga(${contador})" id="delete"><i class="bi bi-trash"></i> Delete </button>
         </div>
         </div>`;
         corpo.innerHTML +=codigo;
@@ -37,8 +37,15 @@ recebe.addEventListener("keyup",function (event){
     }
 });
 function apaga(atributo) {
-    let sla = document.getElementsByClassName(atributo);
-    if (sla.length > 0) {
-        sla[0].remove();
+    let sla = document.getElementById(atributo);
+    sla.remove();
+}function marcartarefa(id){
+    var item=document.getElementById(id);
+    var classe= item.getAttribute("class");
+    console.log(classe);
+    if(classe=="item"){
+        item.classList.add("paiclick");
+
     }
 }
+

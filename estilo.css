@@ -21,7 +21,7 @@ input{
     padding-left: 5%;
     background-color: rgb(170, 170, 170);
 }
-#adiciona{
+.adiciona{
     height: 120px;
     font-size: 1rem;
     width: 14%;
@@ -36,7 +36,7 @@ main{
     margin-top: 20px;
     padding: 50px;
 }
-#pai{
+.pai{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -48,7 +48,7 @@ main{
     height: 80%;
     width: 100%;
 }
-#paiclick{
+.paiclick{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -62,19 +62,19 @@ main{
     color: rgb(100, 100, 100);
     width: 100%;
 }
-#bolinha{
+.bolinha{
     flex: 5%;
     padding: 5px;
     color: black;
     text-align: center;
     font-size: 2rem;
 }
-#tarefa{
+.tarefa{
     flex: 55%;
     padding: 5px;
     text-align: center;
 }
-#deletar{
+.deletar{
     flex: 10%;
     padding: 5px;
     

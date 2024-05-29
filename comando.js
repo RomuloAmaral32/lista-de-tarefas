@@ -1,6 +1,6 @@
 let contador=0;
 let recebe = document.getElementById("ouvinte");
-let botao = document.getElementById("adiciona");
+let botao = document.getElementById("btn");
 let corpo = document.getElementById("areatrabalho")
 
 function novatarefa(){
@@ -9,15 +9,15 @@ function novatarefa(){
     if((valor !=="") && (valor !==null) && (valor !==undefined)){
         contador++;
         let codigo=
-        `   <div class=" ${contador}" id="pai">
-        <div id="bolinha" >
+        `   <div id="${contador}" class="pai">
+        <div class="bolinha" >
             <i class="bi bi-circle"></i>
         </div>
-        <div id="tarefa">
-        ${valor}     
+        <div class="tarefa">
+        ${valor}
         </div>
-        <div id="deletar">
-        <button onclick="apaga(${contador})" id="delete"><i class="bi bi-trash"></i> Delete </button>
+        <div class="deletar">
+        <button id="delete"><i class="bi bi-trash"></i> Delete </button>
         </div>
         </div>`;
         corpo.innerHTML +=codigo;

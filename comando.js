@@ -43,9 +43,19 @@ function apaga(atributo) {
     var item=document.getElementById(id);
     var classe= item.getAttribute("class");
     console.log(classe);
-    if(classe=="item"){
+    if(classe=="pai"){
         item.classList.add("paiclick");
+        var icone=document.getElementById("icone_"+id);
+        icone.classList.remove("bi bi-circle");
+        icone.classList.add(" bi bi-check-circle-fill");
+        item.parentNode.appendChild(item);
 
+    }
+    else{
+        item.classList.remove("paiclick");
+        var icone=document.getElementById("icone_"+id);
+        icone.classList.remove("check-circle-fill");
+        icone.classList.add(" bi bi-circle");
     }
 }
 

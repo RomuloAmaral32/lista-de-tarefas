@@ -5,7 +5,7 @@ h1{
     color: white;
 }
 body{
-    background-image: url(https://c.wallhere.com/photos/53/4a/AI_art_minimalism_mountains_vector_illustration_nature_simple_background-2215826.jpg!d);
+    background-image: url("https://c.wallhere.com/photos/53/4a/AI_art_minimalism_mountains_vector_illustration_nature_simple_background-2215826.jpg!d");
 }
 header{
     display: flex;

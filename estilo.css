@@ -7,27 +7,6 @@ h1{
 body{
     background-image: url("https://c.wallhere.com/photos/53/4a/AI_art_minimalism_mountains_vector_illustration_nature_simple_background-2215826.jpg!d");
 }
-header{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    width: 80%;
-    margin: auto auto;
-}
-input{
-    height: 120px;
-    font-size: 2rem;
-    width: 80%;
-    padding-left: 5%;
-    background-color: rgb(170, 170, 170);
-}
-.adiciona{
-    height: 120px;
-    font-size: 1rem;
-    width: 14%;
-    background-color:green;
-    cursor: pointer;
-}
 main{
     display: flex;
     flex-flow: row wrap;
@@ -90,3 +69,111 @@ main{
 .bi-check-circle-fill{
     color:  green;
 }
+@media only screen and (max-width: 600px) {
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 80%;
+        margin: auto auto;
+    }
+    input{
+        height: 120px;
+        font-size: 1.4rem;
+        width: 63%;
+        padding-left: 5%;
+        background-color: rgb(170, 170, 170);
+    }
+    .adiciona{
+        height: 120px;
+        font-size: 1rem;
+        width: 25%;
+        background-color:green;
+        cursor: pointer;
+    }
+    body{
+        background-image: url("https://c.wallhere.com/photos/53/4a/AI_art_minimalism_mountains_vector_illustration_nature_simple_background-2215826.jpg!d");
+    }
+}
+@media only screen and (min-width: 600px) {
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 80%;
+        margin: auto auto;
+    }
+    input{
+        height: 120px;
+        font-size: 1.9rem;
+        width: 65%;
+        padding-left: 5%;
+        background-color: rgb(170, 170, 170);
+    }
+    .adiciona{
+        height: 120px;
+        font-size: 1rem;
+        width: 28%;
+        background-color:green;
+        cursor: pointer;
+    }
+    body{
+        background-image: url("https://c.wallhere.com/photos/53/4a/AI_art_minimalism_mountains_vector_illustration_nature_simple_background-2215826.jpg!d");
+    }
+   
+}
+@media only screen and (min-width: 768px) {
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 80%;
+        margin: auto auto;
+    }
+    input{
+        height: 120px;
+        font-size: 2rem;
+        width: 65%;
+        padding-left: 5%;
+        background-color: rgb(170, 170, 170);
+    }
+    .adiciona{
+        height: 120px;
+        font-size: 1rem;
+        width: 28%;
+        background-color:green;
+        cursor: pointer;
+    }
+    body{
+        background-image: url("https://c.wallhere.com/photos/53/4a/AI_art_minimalism_mountains_vector_illustration_nature_simple_background-2215826.jpg!d");
+    }
+
+
+}
+@media only screen and (min-width: 992px) {
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 80%;
+        margin: auto auto;
+    }
+    input{
+        height: 120px;
+        font-size: 2rem;
+        width: 80%;
+        padding-left: 5%;
+        background-color: rgb(170, 170, 170);
+    }
+    .adiciona{
+        height: 120px;
+        font-size: 1rem;
+        width: 14%;
+        background-color:green;
+        cursor: pointer;
+    }
+    body{
+        background-image: url("https://c.wallhere.com/photos/53/4a/AI_art_minimalism_mountains_vector_illustration_nature_simple_background-2215826.jpg!d");
+    }
+}
+
